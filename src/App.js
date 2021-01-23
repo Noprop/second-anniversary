@@ -4,11 +4,7 @@ import image from './pics/homepage.jpg'
 // import image from './pics/PNG image 40.png';
 import Locations from './components/Locations';
 import Timeline from './components/Timeline';
-
-
-
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { animateScroll as scroll, } from 'react-scroll'
 
 const App = () => {
   const [render, setRender] = useState([false, 0]);
@@ -38,10 +34,10 @@ const App = () => {
             onClick={() => setRender([true, 0])}
           >Locations</button>
           {/* </button> */}
-          <button 
+          {/* <button 
             className="headerButton hb2" 
             onClick={() => setRender([true, 1])}
-          >Timeline</button>
+          >Timeline</button> */}
           <div className="imgContainer">
             <img src={image} alt="Picture of us"/>
           </div>

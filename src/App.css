@@ -245,7 +245,7 @@ header {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .App {
@@ -316,13 +316,12 @@ main {
   justify-content: space-between;
 }
 .selections button {
-  width: 45%;
+  width: 48%;
 }
-
 .locations button {
   color: #fff;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   border: 2px solid #C3073F;
   border-radius: 10px;
   padding: 13px 0;
@@ -331,20 +330,64 @@ main {
   transition: all 0.5s ease-in;
   text-transform: uppercase;
   text-decoration: none;
-  width: 45%;
   text-align: center;
 }
-
 .locations .random {
-  padding: 5px 0px;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   background-image: url('./pics/shuffle-arrows.svg');
   background-color: #fff;
   background-position: center;
   background-size: contain;
   border-radius: 55%;
 }
+
+.content {
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+.content .random {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes imageAppears {
+  from {
+    opacity: 0.2;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+.content img {
+  border-radius: 4px;
+  animation: imageAppears 1s forwards;
+}
+
+.loadingDiv {
+  height: 700px;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loadingDiv img {
+  height: 40px;
+  width: 40px;
+  animation: loading 5s forwards;
+  margin: 100px auto;
+}
+.pageLoaded {
+  min-height: 124vh;
+}
+
 
 /* .App {
   text-align: center;
