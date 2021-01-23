@@ -23,7 +23,7 @@ const App = () => {
       <div className="wrapper">
         <header className="header">
           <h1>2</h1>
-          <h2>Hi Hannah. Happy two years!!! ❤️ I want to be with you for a very, very long time. I figured making a website would a good idea to show you that.</h2>
+          <h2>Hi Hannah. Happy two years!!! ❤️ I want to be with you for a very, very long time. I figured making a website would be a good idea to show you that.</h2>
           <h2>Feel free to visit this place whenever you feel like it :)</h2>
           {/* <button 
             className="headerButton" 
